@@ -28,14 +28,10 @@ export default class FilterContainer extends React.Component {
   }
 
   handleFilterInput(filter, value) {
-    console.log('handleSourceFilter', filter, value);
-    console.log('props', this.props);
-
     this.filterValues[filter] = value;
   }
 
   handleExecute(event) {
-    console.log('props!', this.props);
     this.props.handleFilterSelection(this.filterValues);
   }
 

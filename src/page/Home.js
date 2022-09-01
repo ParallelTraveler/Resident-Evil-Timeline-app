@@ -12,11 +12,9 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = { filters: {} };
-    console.log(timelineData);
   }
 
   handleFilterSelection = (values) => {
-    console.log('Values:', values);
     this.setState({
       filters: values
     });

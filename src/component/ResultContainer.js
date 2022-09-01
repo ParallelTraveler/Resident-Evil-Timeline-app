@@ -8,7 +8,6 @@ export default class ResultContainer extends React.Component {
   }
 
   getResults() {
-    console.log('Filters:', this.props.filters);
     let filters = this.props.filters;
     let results = this.props.data;
 
@@ -30,7 +29,6 @@ export default class ResultContainer extends React.Component {
     if (!filters.hasOwnProperty('show_release_date')) {
       filters.show_release_date = true;
     }
-    console.log('Adjusted filters:', this.props.filters);
 
     // Attach the filter data.
     for (let index in results) {
@@ -62,14 +60,12 @@ export default class ResultContainer extends React.Component {
         results = results.sort(function (a, b) {
           return new Date(a.reference_date) - new Date(b.reference_date);
         });
-        console.log('Sorting un-universe');
         break;
 
       default:
         results = results.sort(function (a, b) {
           return new Date(a.release_date) - new Date(b.release_date);
         });
-        console.log('Sorting release date');
     }
 
     // Return the final results.
@@ -78,7 +74,6 @@ export default class ResultContainer extends React.Component {
 
   render() {
     let results = this.getResults();
-    console.log('Results:', results);
     return (
       <>
         {results.map(function (item, i) {

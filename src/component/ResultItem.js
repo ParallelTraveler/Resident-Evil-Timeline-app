@@ -5,7 +5,6 @@ import { Typography, Card } from '@mui/material';
 export default class ResultItem extends React.Component {
   render() {
     const item = this.props.item;
-    console.log('Item', item);
 
     // Title
     let title = item.title;
