@@ -29,7 +29,7 @@ export default class Home extends React.Component {
         <Navbar />
         <Container maxWidth="lg">
           <p>
-            <img src="/Resident-Evil-Timeline/images/title.png" alt="Resident Evil Timeline" className="banner" />
+            <img src="/Resident-Evil-Timeline-app/images/title.png" alt="Resident Evil Timeline" className="banner" />
           </p>
           <main>
             <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />

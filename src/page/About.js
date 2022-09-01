@@ -8,7 +8,7 @@ function About() {
       <Navbar />
       <Container maxWidth="lg">
         <p>
-          <img src="/Resident-Evil-Timeline/images/title.png" alt="Resident Evil Timeline" className="banner" />
+          <img src="/Resident-Evil-Timeline-app/images/title.png" alt="Resident Evil Timeline" className="banner" />
         </p>
         <Grid container spacing={2}>
           <Grid item xs={12} md={9}>
