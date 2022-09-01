@@ -1,0 +1,20 @@
+.nav {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0;
+  font-size: 0.9rem;
+}
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.nav li:first-child {
+  margin-left: 0;
+}
+.nav li a {
+  color: #fff;
+}
+.nav li a.active {
+  color: #ed1e1c;
+}
