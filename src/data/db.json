@@ -93,7 +93,7 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": ""
+      "availability": "CD"
   },
   {
       "title": "BIOHAZARD DRAMA ALBUM ~The Little Runaway Sherry~",
@@ -105,7 +105,7 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": ""
+      "availability": "CD"
   },
   {
       "title": "Resident Evil Outbreak series",
@@ -261,7 +261,7 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": ""
+      "availability": "CD"
   },
   {
       "title": "Resident Evil Survivor",
@@ -481,10 +481,22 @@
   },
   {
       "title": "Resident Evil: Revelations 2",
+      "entry_type": "Simple",
+      "scenario": "",
+      "release_date": "2015-02-24",
+      "reference_date": "2011-01-01",
+      "display_date": "Throughout 2011",
+      "event": "Sejm Island incident",
+      "canon": "Main",
+      "source": "Major video game",
+      "availability": ""
+  },
+  {
+      "title": "Resident Evil: Revelations 2",
       "entry_type": "Sectioned",
       "scenario": "Claire episodes, The Struggle",
       "release_date": "2015-02-24",
-      "reference_date": "2011-01-01",
+      "reference_date": "2011-01-02",
       "display_date": "Early 2011",
       "event": "Sejm Island incident",
       "canon": "Main",
@@ -496,19 +508,19 @@
       "entry_type": "",
       "scenario": "",
       "release_date": "2012-10-09",
-      "reference_date": "2011-01-02",
+      "reference_date": "2011-01-03",
       "display_date": "Mid 2011",
       "event": "East Slavic Civil War",
       "canon": "Main",
       "source": "Movie",
-      "availability": "DVD, Blu-ray, Play Station Store"
+      "availability": "DVD, Blu-ray, PlayStation Store"
   },
   {
       "title": "Resident Evil: Revelations 2",
       "entry_type": "Sectioned",
       "scenario": "The Struggle, Barry episodes, Little Miss",
       "release_date": "2015-02-24",
-      "reference_date": "2011-01-03",
+      "reference_date": "2011-01-04",
       "display_date": "Late 2011",
       "event": "Sejm Island incident",
       "canon": "Main",
@@ -621,7 +633,7 @@
       "event": "New York bioterrorist attack",
       "canon": "Main",
       "source": "Movie",
-      "availability": "DVD, Blu-ray, Play Station Store"
+      "availability": "DVD, Blu-ray, PlayStation Store"
   },
   {
       "title": "Resident Evil Vendetta",
@@ -770,7 +782,7 @@
   {
       "title": "Resident Evil Village",
       "entry_type": "Sectioned",
-      "scenario": "Epiloque, Shadows of Rose",
+      "scenario": "Epilogue, Shadows of Rose",
       "release_date": "2021-05-07",
       "reference_date": "2037-01-01",
       "display_date": "2037",
