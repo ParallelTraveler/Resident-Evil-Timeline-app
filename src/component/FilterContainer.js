@@ -21,7 +21,15 @@ export default class FilterContainer extends React.Component {
     this.handleFilterInput = this.handleFilterInput.bind(this);
 
     // Create the filter options.
-    this.sourceOptions = this.props.data.map(item => item.source).filter(this.onlyUnique);
+    this.sourceOptions = [
+      'Major video game',
+      'Minor video game',
+      'Movie',
+      'In-universe documentary',
+      'Literature',
+      'Drama album',
+      'Manga',
+    ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
     this.entryTypeOptions = ['Simple', 'Sectioned'];
     this.canonOptions = this.props.data.map(item => item.canon).filter(this.onlyUnique);
     this.sortResultsOptions = ['In-universe date', 'Release date'];
