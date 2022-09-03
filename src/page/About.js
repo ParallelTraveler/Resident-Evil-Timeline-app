@@ -19,7 +19,7 @@ function About() {
               <li>sort by release date or by in-universe date</li>
               <li>filter by the media type i.e. games, movies, both, everything etc.</li>
               <li>filter by canon status i.e. main canon, anderson, no-plot</li>
-              <li>show entries like Resident Evil 2 as single or multiple entries to accurately represent the multiple instances it takes place in time</li>
+              <li>show entries like Resident Evil 3 as single or multiple entries to accurately represent the multiple instances it takes place in time</li>
               <li>toggle accessibility notes; for those wanting to know what's feasible for them to experience and access</li>
             </ul>
             <p>Create the exact timeline you've been looking for!</p>
@@ -32,11 +32,16 @@ function About() {
             <p>Our team consists of dedicated fandom benefactors who have devoted countless hours to creating online resources for accessing and understanding the Resident Evil franchise. We hail from different spheres of the fandom and have essentially joined forces for this venture. We hope the greater fandom appreciates this tool!</p>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
               <p><strong>Project director</strong> - ParallelTraveler; Resident Evil wiki admin</p>
-              <p><Link href="https://twitter.com/bioranger_PT" target="_blank">@bioranger_PT</Link></p>
+              <p>Twitter: <Link href="https://twitter.com/bioranger_PT" target="_blank">@bioranger_PT</Link></p>
             </Card>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
               <p><strong>Main developer</strong> - EvilResource; owner of evilresource.com</p>
-              <p><Link href="https://twitter.com/EvilResource" target="_blank">@EvilResource</Link></p>
+              <p>Twitter: <Link href="https://twitter.com/EvilResource" target="_blank">@EvilResource</Link></p>
+              <p>Website: <Link href="https://www.evilresource.com/" target="_blank">evilresource.com</Link></p>
+            </Card>
+            <Card sx={{ my: 2, px: 2 }} variant="outlined">
+              <p><strong>Assistance</strong> - MassDistraction</p>
+              <p>Twitter: <Link href="https://twitter.com/massaharhautus" target="_blank">@massaharhautus</Link></p>
             </Card>
           </Grid>
         </Grid>
