@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Resident-Evil-Timeline-app/static/css/main.aa6ae07b.css",
-    "main.js": "/Resident-Evil-Timeline-app/static/js/main.2838fc59.js",
+    "main.css": "/Resident-Evil-Timeline-app/static/css/main.57ca15f9.css",
+    "main.js": "/Resident-Evil-Timeline-app/static/js/main.c47909af.js",
     "index.html": "/Resident-Evil-Timeline-app/index.html",
-    "main.aa6ae07b.css.map": "/Resident-Evil-Timeline-app/static/css/main.aa6ae07b.css.map",
-    "main.2838fc59.js.map": "/Resident-Evil-Timeline-app/static/js/main.2838fc59.js.map"
+    "main.57ca15f9.css.map": "/Resident-Evil-Timeline-app/static/css/main.57ca15f9.css.map",
+    "main.c47909af.js.map": "/Resident-Evil-Timeline-app/static/js/main.c47909af.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa6ae07b.css",
-    "static/js/main.2838fc59.js"
+    "static/css/main.57ca15f9.css",
+    "static/js/main.c47909af.js"
   ]
 }
