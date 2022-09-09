@@ -9,7 +9,10 @@
       "event": "",
       "canon": "Main",
       "source": "Literature",
-      "availability": "Resident Evil Archives II encyclopedia"
+      "availability": "Resident Evil Archives II encyclopedia",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BIO HAZARD The Wicked North Sea",
@@ -21,7 +24,10 @@
       "event": "Gadiwell Island Incident",
       "canon": "Flagship",
       "source": "Literature",
-      "availability": "Japanese only"
+      "availability": "Japanese only",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 0",
@@ -29,11 +35,14 @@
       "scenario": "",
       "release_date": "2002-11-12",
       "reference_date": "1998-07-22",
-      "display_date": "July 23 1998",
+      "display_date": "July 23, 1998",
       "event": "Ecliptic Express Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Available on modern systems"
+      "availability": "Available on modern systems",
+      "link": "",
+      "image": "",
+      "description": "Prequel to the first Resident Evil"
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -41,11 +50,14 @@
       "scenario": "Beginnings",
       "release_date": "2007-11-13",
       "reference_date": "1998-07-23",
-      "display_date": "July 23 1998",
+      "display_date": "July 23, 1998",
       "event": "Ecliptic Express Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -53,11 +65,14 @@
       "scenario": "Nightmare",
       "release_date": "2007-11-13",
       "reference_date": "1998-07-24",
-      "display_date": "July 24 1998",
+      "display_date": "July 24, 1998",
       "event": "Mansion Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil",
@@ -65,11 +80,14 @@
       "scenario": "",
       "release_date": "1996-03-22",
       "reference_date": "1998-07-25",
-      "display_date": "July 24 1998",
+      "display_date": "July 24, 1998",
       "event": "Mansion Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "https:\/\/residentevil.fandom.com\/wiki\/Resident_Evil_(1996_game)",
+      "image": "https:\/\/static.wikia.nocookie.net\/residentevil\/images\/1\/10\/Resident_Evil_%281996_game%29.jpg",
+      "description": "The very first product of the IP"
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -77,11 +95,29 @@
       "scenario": "Rebirth",
       "release_date": "2007-11-13",
       "reference_date": "1998-07-26",
-      "display_date": "July 24 1998",
+      "display_date": "July 24, 1998",
       "event": "Mansion Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil: Resistance",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2020-04-03",
+      "reference_date": "1998-09-01",
+      "display_date": "September 1998",
+      "event": "Raccoon City Incident",
+      "canon": "Pocket",
+      "source": "Minor video game",
+      "availability": "PS4, Xbox One, PC",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BIO HAZARD DRAMA ALBUM ~The Doomed Raccoon City~ series",
@@ -93,10 +129,28 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": "CD"
+      "availability": "CD",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
-      "title": "BIOHAZARD DRAMA ALBUM ~The Little Runaway Sherry~",
+      "title": "Resident Evil: Operation Raccoon City",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2012-03-20",
+      "reference_date": "1998-09-02",
+      "display_date": "September 22-30, 1998",
+      "event": "Raccoon City Incident",
+      "canon": "ORC",
+      "source": "Minor video game",
+      "availability": "PS3, Xbox 360, PC",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "BIOHAZARD 2 DRAMA ALBUM ~The Little Runaway Sherry~",
       "entry_type": "",
       "scenario": "",
       "release_date": "1999-03-20",
@@ -105,7 +159,10 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": "CD"
+      "availability": "CD",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Outbreak series",
@@ -113,11 +170,14 @@
       "scenario": "",
       "release_date": "2003-12-11",
       "reference_date": "1998-09-23",
-      "display_date": "September 24 - October 1 1998",
+      "display_date": "September 24 - October 1, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS2"
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Outbreak series",
@@ -125,11 +185,14 @@
       "scenario": "Outbreak, Hellfire, Wild Things",
       "release_date": "2003-12-11",
       "reference_date": "1998-09-24",
-      "display_date": "September 24 1998",
+      "display_date": "September 24, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS2"
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BIOHAZARD 4D-EXECUTER",
@@ -141,7 +204,10 @@
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Movie",
-      "availability": "No official availability. Viewable on YouTube"
+      "availability": "No official availability. Viewable on YouTube",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 3: Nemesis",
@@ -149,11 +215,14 @@
       "scenario": "",
       "release_date": "1999-09-22",
       "reference_date": "1998-09-26",
-      "display_date": "September 28 - October 1 1998",
+      "display_date": "September 28 - October 1, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 3: Nemesis",
@@ -161,11 +230,14 @@
       "scenario": "Main game: first half",
       "release_date": "1999-09-22",
       "reference_date": "1998-09-27",
-      "display_date": "September 28 1998",
+      "display_date": "September 28, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resdent Evil Outbreak series",
@@ -173,11 +245,14 @@
       "scenario": "Desperate times",
       "release_date": "2003-12-11",
       "reference_date": "1998-09-28",
-      "display_date": "September 29 1998",
+      "display_date": "September 29, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS2"
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 2",
@@ -185,11 +260,14 @@
       "scenario": "",
       "release_date": "1998-01-21",
       "reference_date": "1998-09-29",
-      "display_date": "September 29-30 1998",
+      "display_date": "September 29-30, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 2",
@@ -197,11 +275,14 @@
       "scenario": "Main game",
       "release_date": "1998-01-21",
       "reference_date": "1998-09-30",
-      "display_date": "September 29-30 1998",
+      "display_date": "September 29-30, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 2",
@@ -209,11 +290,14 @@
       "scenario": "4th Survivor",
       "release_date": "1998-01-21",
       "reference_date": "1998-10-01",
-      "display_date": "September 30 1998",
+      "display_date": "September 30, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 3: Nemesis",
@@ -221,11 +305,14 @@
       "scenario": "Main game; second half",
       "release_date": "1998-01-21",
       "reference_date": "1998-10-02",
-      "display_date": "October 1 1998",
+      "display_date": "October 1, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Remake available on modern systems"
+      "availability": "Remake available on modern systems",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Outbreak series",
@@ -233,11 +320,14 @@
       "scenario": "Decisions, decisions, End of the road",
       "release_date": "2003-12-11",
       "reference_date": "1998-10-03",
-      "display_date": "October 1 1998",
+      "display_date": "October 1, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS2"
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -245,23 +335,44 @@
       "scenario": "Death's Door",
       "release_date": "2007-11-13",
       "reference_date": "1998-10-04",
-      "display_date": "October 1 1998",
+      "display_date": "October 1, 1998",
       "event": "Raccoon City Incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
-      "title": "BIOHAZARD DRAMA ALBUM ~The Female Spy Ada Lives~",
+      "title": "BIOHAZARD 2 DRAMA ALBUM ~The Female Spy Ada Lives~",
       "entry_type": "",
       "scenario": "",
       "release_date": "1999-03-07",
       "reference_date": "1998-10-05",
-      "display_date": "October 5 1998",
+      "display_date": "October 5, 1998",
       "event": "Raccoon City Incident",
       "canon": "Flagship",
       "source": "Drama album",
-      "availability": "CD"
+      "availability": "CD",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Wesker's Report",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2001-03-22",
+      "reference_date": "1998-10-31",
+      "display_date": "After Raccoon City incident",
+      "event": "",
+      "canon": "Main",
+      "source": "Literature",
+      "availability": "DVD, Resident Evil Archives II encyclopedia",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Survivor",
@@ -273,7 +384,10 @@
       "event": "Sheena Island incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS1"
+      "availability": "PS1",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil CODE:Veronica",
@@ -281,11 +395,29 @@
       "scenario": "",
       "release_date": "2000-02-03",
       "reference_date": "1998-12-01",
-      "display_date": "December 1 1998",
+      "display_date": "December 27-28, 1998",
       "event": "Rockfort Island incident, Antarctic outbreak",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "Dreamcast, PS2, PS3, Xbox 360"
+      "availability": "Dreamcast, PS2, PS3, Xbox 360",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil: Infinite Darkness",
+      "entry_type": "Sectioned",
+      "scenario": "Flashback scenes",
+      "release_date": "2021-07-08",
+      "reference_date": "2000-10-01",
+      "display_date": "October 2000",
+      "event": "Penamstan Civil War",
+      "canon": "Main",
+      "source": "TV series",
+      "availability": "DVD, Blu-ray, Netflix",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Darkside Chronicles",
@@ -294,10 +426,13 @@
       "release_date": "2009-11-17",
       "reference_date": "2002-01-01",
       "display_date": "2002",
-      "event": "2002 South American incidenct",
+      "event": "2002 South American incident",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Dead Aim",
@@ -309,7 +444,10 @@
       "event": "Spencer Rain outbreak, Atlantic Facility outbreak",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "PS2"
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Wesker's Extra Report",
@@ -321,7 +459,10 @@
       "event": "Caucasus outbreak",
       "canon": "Main",
       "source": "Literature",
-      "availability": "Resident Evil Archives II encyclopedia"
+      "availability": "Resident Evil Archives II encyclopedia",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -333,7 +474,10 @@
       "event": "Caucasus outbreak",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -345,7 +489,10 @@
       "event": "Caucasus outbreak",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: The Umbrella Chronicles",
@@ -357,7 +504,10 @@
       "event": "Caucasus outbreak",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": "Wii, PS3 (HD remaster)"
+      "availability": "Wii, PS3 (HD remaster)",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations",
@@ -369,7 +519,10 @@
       "event": "Terragrigia Panic",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "3DS, PS3, 360, PS4, Xbox1, PC"
+      "availability": "3DS, PS3, 360, PS4, Xbox One, PC",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 4",
@@ -378,10 +531,13 @@
       "release_date": "2005-01-11",
       "reference_date": "2004-01-02",
       "display_date": "Autumn 2004",
-      "event": "2004 Abduction of the President's Daughter",
+      "event": "Abduction of the President's Daughter",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "GameCube, PS2, Wii, PS3, 360, PS4, Xbox1, PC,"
+      "availability": "GC, PS2, Wii, PS3, 360, PS4, Xbox One, PC",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations",
@@ -393,7 +549,10 @@
       "event": "Queen Zenobia Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "3DS, PS3, 360, PS4, Xbox1, PC"
+      "availability": "3DS, PS3, 360, PS4, Xbox One, PC",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations",
@@ -405,7 +564,25 @@
       "event": "Queen Zenobia Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": "3DS, PS3, 360, PS4, Xbox1, PC"
+      "availability": "3DS, PS3, 360, PS4, Xbox One, PC",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Jessica's Report",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2012-01-26",
+      "reference_date": "2005-01-03",
+      "display_date": "2005",
+      "event": "Terragrigia Panic",
+      "canon": "Main",
+      "source": "In-universe documentary",
+      "availability": "DVD",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Angela's Diary",
@@ -413,11 +590,14 @@
       "scenario": "",
       "release_date": "2008-10-17",
       "reference_date": "2005-08-11",
-      "display_date": "August 11 - November 7 2005",
+      "display_date": "August 11 - November 7, 2005",
       "event": "India bioterror attack",
       "canon": "Main",
       "source": "Literature",
-      "availability": "Japanese only"
+      "availability": "Japanese only",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Degeneration",
@@ -425,11 +605,44 @@
       "scenario": "",
       "release_date": "2008-10-17",
       "reference_date": "2005-11-01",
-      "display_date": "November 1 2005",
-      "event": "Harvardville Airport incident",
+      "display_date": "November 1, 2005",
+      "event": "Harvardville Airport incident, Air Dome Laboratory Incident",
       "canon": "Main",
       "source": "Movie",
-      "availability": "UMD, DVD, Blu-ray"
+      "availability": "UMD, DVD, Blu-ray",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil: Infinite Darkness",
+      "entry_type": "Simple",
+      "scenario": "",
+      "release_date": "2021-07-08",
+      "reference_date": "2006-01-01",
+      "display_date": "2006",
+      "event": "White House Incident, Penamstan Conspiracy Incidents",
+      "canon": "Main",
+      "source": "TV series",
+      "availability": "DVD, Blu-ray, Netflix",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil: Infinite Darkness",
+      "entry_type": "Sectioned",
+      "scenario": "Present time",
+      "release_date": "2021-07-08",
+      "reference_date": "2006-01-02",
+      "display_date": "2006",
+      "event": "White House Incident, Penamstan Conspiracy Incidents",
+      "canon": "Main",
+      "source": "TV series",
+      "availability": "DVD, Blu-ray, Netflix",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 5",
@@ -437,11 +650,14 @@
       "scenario": "Lost in Nightmares",
       "release_date": "2009-03-05",
       "reference_date": "2006-08-01",
-      "display_date": "August 1 2006",
+      "display_date": "August 2006",
       "event": "Raid on the Spencer Estate",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BSAA Remote Desktop",
@@ -452,8 +668,11 @@
       "display_date": "Decmeber 2008 - March 2009",
       "event": "Kijuju Autonomous Zone incident",
       "canon": "Main",
-      "source": "Literature",
-      "availability": ""
+      "source": "Web hosted",
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 5",
@@ -465,19 +684,25 @@
       "event": "Kijuju Autonomous Zone incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 5",
       "entry_type": "Sectioned",
-      "scenario": "Main game",
+      "scenario": "Main game, Desperate Escape",
       "release_date": "2009-03-05",
       "reference_date": "2009-03-02",
       "display_date": "March 2009",
       "event": "Kijuju Autonomous Zone incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations 2",
@@ -489,7 +714,10 @@
       "event": "Sejm Island incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations 2",
@@ -501,7 +729,10 @@
       "event": "Sejm Island incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Damnation",
@@ -513,7 +744,10 @@
       "event": "East Slavic Civil War",
       "canon": "Main",
       "source": "Movie",
-      "availability": "DVD, Blu-ray, PlayStation Store"
+      "availability": "DVD, Blu-ray, digital",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Revelations 2",
@@ -525,7 +759,10 @@
       "event": "Sejm Island incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -537,7 +774,10 @@
       "event": "The Experiment",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -549,7 +789,10 @@
       "event": "The Experiment",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 6",
@@ -558,10 +801,13 @@
       "release_date": "2012-10-02",
       "reference_date": "2012-12-24",
       "display_date": "December 24, 2012 - July 1, 2013",
-      "event": "2012-2013 Global bioterror attacks",
+      "event": "Global Bioterrorist Attacks",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 6",
@@ -573,7 +819,10 @@
       "event": "Edonian Civil War",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -581,11 +830,14 @@
       "scenario": "The Experiment: Mission 24",
       "release_date": "2016-06-21",
       "reference_date": "2013-01-02",
-      "display_date": "January 2 2013",
+      "display_date": "January 2, 2013",
       "event": "The Experiment",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 6",
@@ -597,7 +849,10 @@
       "event": "Tall Oaks bioterror incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 6",
@@ -609,7 +864,10 @@
       "event": "Lanshiang bioterror incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -621,7 +879,10 @@
       "event": "Deployment of Umbrella Corps",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Vendetta",
@@ -633,7 +894,10 @@
       "event": "New York bioterrorist attack",
       "canon": "Main",
       "source": "Movie",
-      "availability": "DVD, Blu-ray, PlayStation Store"
+      "availability": "DVD, Blu-ray, digital",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Vendetta",
@@ -645,7 +909,10 @@
       "event": "Quer\u00e9taro mansion incident, Alexander Institute terror attack",
       "canon": "Main",
       "source": "Movie",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BSAA Mission Briefing: Combat Arias",
@@ -657,7 +924,10 @@
       "event": "New York bioterrorist attack",
       "canon": "Main",
       "source": "In-universe documentary",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Vendetta",
@@ -669,7 +939,10 @@
       "event": "New York bioterrorist attack",
       "canon": "Main",
       "source": "Movie",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "BIOHAZARD heavenly island",
@@ -681,19 +954,25 @@
       "event": "Sonido de Tortuga Island incident",
       "canon": "Main",
       "source": "Manga",
-      "availability": ""
+      "availability": "Japanese, German, Spanish",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 7: Biohazard",
       "entry_type": "Sectioned",
-      "scenario": "Old Videotape, Daughters, Murders in Dulvey",
+      "scenario": "Old Videotape, Daughters",
       "release_date": "2017-01-24",
       "reference_date": "2014-10-01",
-      "display_date": "October 1 2014",
+      "display_date": "October 1, 2014",
       "event": "Baker House Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -705,7 +984,10 @@
       "event": "Training of Umbrella Corps",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil: Umbrella Corps",
@@ -717,7 +999,25 @@
       "event": "Deployment of Umbrella Corps",
       "canon": "Main",
       "source": "Minor video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil 7: Biohazard",
+      "entry_type": "Sectioned",
+      "scenario": "Derelict house footage, Nightmare, Bedroom, 21, Happy Birthday",
+      "release_date": "2017-01-24",
+      "reference_date": "2017-06-01",
+      "display_date": "Starts on June 1st, 2017",
+      "event": "Baker House Incident",
+      "canon": "Main",
+      "source": "Major video game",
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 7: Biohazard",
@@ -729,19 +1029,40 @@
       "event": "Baker House Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil 7: Biohazard",
       "entry_type": "Sectioned",
-      "scenario": "Main game, Not A Hero, End of Zoe",
+      "scenario": "Main game, Not A Hero",
       "release_date": "2017-01-24",
       "reference_date": "2017-07-19",
-      "display_date": "July 18 - August 2017",
+      "display_date": "July 18-20, 2017",
       "event": "Baker House Incident, Operation Lurking Fear",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil 7: Biohazard",
+      "entry_type": "Sectioned",
+      "scenario": "End of Zoe",
+      "release_date": "2017-12-12",
+      "reference_date": "2017-08-01",
+      "display_date": "August 2017",
+      "event": "Baker House Incident",
+      "canon": "Main",
+      "source": "Major video game",
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Remembering Resident Evil 7",
@@ -753,7 +1074,10 @@
       "event": "Ethan Winters Interview",
       "canon": "Main",
       "source": "In-universe documentary",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Village",
@@ -762,10 +1086,13 @@
       "release_date": "2021-05-07",
       "reference_date": "2021-02-08",
       "display_date": "February 8-10, 2021",
-      "event": "Village Incident",
+      "event": "The Village Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Village",
@@ -774,10 +1101,13 @@
       "release_date": "2021-05-07",
       "reference_date": "2021-02-09",
       "display_date": "February 8-10, 2021",
-      "event": "Village Incident",
+      "event": "The Village Incident",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
   },
   {
       "title": "Resident Evil Village",
@@ -789,6 +1119,84 @@
       "event": "Shadows of Rose",
       "canon": "Main",
       "source": "Major video game",
-      "availability": ""
+      "availability": "",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil Survivor 2 CODE:Veronica",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2001-11-08",
+      "reference_date": "1998-12-03",
+      "display_date": "December 28, 1998",
+      "event": "Claire's nightmare",
+      "canon": "Main",
+      "source": "Minor video game",
+      "availability": "PS2",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "Resident Evil Gaiden",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2001-12-14",
+      "reference_date": "1998-12-02",
+      "display_date": "December 27, 1998",
+      "event": "The Starlight incident",
+      "canon": "Pocket",
+      "source": "Minor video game",
+      "availability": "GBC",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "BIOHAZARD THE STAGE",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2015-10-22",
+      "reference_date": "2010-08-12",
+      "display_date": "August 12, 2010",
+      "event": "Philosophy University Incident",
+      "canon": "Main",
+      "source": "Stage production",
+      "availability": "DVD",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "MUSICAL BIOHAZARD ~ Voice of Gaia ~",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2016-09-30",
+      "reference_date": "2100-01-01",
+      "display_date": "The future",
+      "event": "Dubrovnik siege",
+      "canon": "Main",
+      "source": "Stage production",
+      "availability": "DVD",
+      "link": "",
+      "image": "",
+      "description": ""
+  },
+  {
+      "title": "BIOHAZARD THE EXPERIENCE",
+      "entry_type": "",
+      "scenario": "",
+      "release_date": "2017-02-02",
+      "reference_date": "2017-01-01",
+      "display_date": "Early 2017",
+      "event": "Japan Tyrant experiment",
+      "canon": "Main",
+      "source": "Stage production",
+      "availability": "DVD",
+      "link": "",
+      "image": "",
+      "description": ""
   }
 ]

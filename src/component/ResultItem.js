@@ -1,18 +1,26 @@
 import * as React from 'react';
 import { format } from 'date-fns'
-import { Typography, Card } from '@mui/material';
+import { Typography, Grid, Card, Link } from '@mui/material';
+import './ResultItem.css';
 
 export default class ResultItem extends React.Component {
   render() {
     const item = this.props.item;
 
-    // Title
+    // Title and description
     let title = item.title;
+    let description;
     if (item.scenario) {
       title += ' - ' + item.scenario;
     }
+    if (item.link) {
+      title = <Link href={item.link} target="_blank">{title}</Link>
+    }
+    if (item.description) {
+      description = <p><em>{item.description}</em></p>
+    }
 
-    // Information output.
+    // Information.
     let information = item.display_date;
     if (item.event) {
       information += ' | ' + item.event;
@@ -21,27 +29,41 @@ export default class ResultItem extends React.Component {
       information += ' | Canon: ' + item.canon;
     }
 
-    // Availability output.
+    // Availability.
     let availability;
     if (item.filters.show_availability) {
       availability = <p>{item.availability}</p>
     }
 
-    // Release date output.
+    // Release date.
     let releaseDate;
     if (item.filters.show_release_date) {
       let date = format(new Date(item.release_date), 'MMM d, yyyy');
       releaseDate = <Typography variant="subtitle1" component="small">({date})</Typography>
     }
 
+    // Image
+    let image;
+    if (item.image) {
+      image = <span className="entry-image"><img src={item.image} width="200" alt="" /></span>
+    }
+
     return (
       <>
         <Card sx={{ my: 2, px: 2 }}>
-          <Typography sx={{ mt: 2 }} variant="h5" component="h2">
-            {title} {releaseDate}
-          </Typography>
-          <p>{information}</p>
-          {availability}
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={10}>
+              <Typography sx={{ mt: 2 }} variant="h5" component="h2">
+                {title} {releaseDate}
+              </Typography>
+              {description}
+              <p>{information}</p>
+              {availability}
+            </Grid>
+            <Grid item xs={12} md={2} sx={{ my: 2 }}>
+              {image}
+            </Grid>
+          </Grid>
         </Card>
       </>
     );

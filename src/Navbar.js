@@ -18,6 +18,11 @@ function Navbar() {
               About
             </NavLink>
           </ListItem>
+          <ListItem disablePadding>
+            <NavLink to="/further-reading">
+              Further&nbsp;reading
+            </NavLink>
+          </ListItem>
         </List>
       </Container>
     </AppBar>

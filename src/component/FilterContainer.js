@@ -24,11 +24,14 @@ export default class FilterContainer extends React.Component {
     this.sourceOptions = [
       'Major video game',
       'Minor video game',
-      'Movie',
-      'In-universe documentary',
-      'Literature',
       'Drama album',
+      'Movie',
+      'TV series',
+      'In-universe documentary',
+      'Web hosted',
+      'Literature',
       'Manga',
+      'Stage production',
     ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
     this.entryTypeOptions = ['Simple', 'Sectioned'];
     this.canonOptions = this.props.data.map(item => item.canon).filter(this.onlyUnique);

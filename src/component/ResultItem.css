@@ -1,0 +1,8 @@
+.entry-image {
+  display: block;
+}
+.entry-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
