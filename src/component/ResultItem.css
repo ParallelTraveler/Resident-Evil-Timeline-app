@@ -1,8 +1,21 @@
 .entry-image {
   display: block;
 }
+
 .entry-image img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.entry-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #121212;
+  background: #121212;
+  padding: 5px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  vertical-align: bottom;
 }

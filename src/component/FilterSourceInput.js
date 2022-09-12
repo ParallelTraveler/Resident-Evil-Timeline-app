@@ -36,15 +36,15 @@ export default class FilterSourceInput extends React.Component {
   render() {
     return (
       <FormControl fullWidth>
-        <InputLabel id="filter-source-label">Lore source</InputLabel>
+        <InputLabel id="filter-source-label">Media source</InputLabel>
         <Select
           labelId="filter-source-label"
           id="filter-source"
           multiple
           value={this.state.value}
-          label="Lore source"
+          label="Media source"
           onChange={this.handleChange}
-          input={<OutlinedInput label="Lore source" />}
+          input={<OutlinedInput label="Media source" />}
           renderValue={(selected) => selected.join(', ')}
         >
           {this.getOptions()}

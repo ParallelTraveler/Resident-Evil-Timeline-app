@@ -8,6 +8,9 @@ import FilterCanonInput from './FilterCanonInput';
 import ToggleAvailabilityInput from './ToggleAvailabilityInput';
 import SortResultsInput from './SortResultsInput';
 import ToggleReleaseDateInput from './ToggleReleaseDateInput';
+import TogglePictureInput from './TogglePictureInput';
+import ToggleDescriptionInput from './ToggleDescriptionInput';
+import ToggleLoreInput from './ToggleLoreInput';
 
 export default class FilterContainer extends React.Component {
   filterValues = {};
@@ -69,10 +72,19 @@ export default class FilterContainer extends React.Component {
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
           <Grid item xs={12} md="auto">
+            <ToggleLoreInput checked={true} handleInput={this.handleFilterInput} />
+          </Grid>
+          <Grid item xs={12} md="auto">
             <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md="auto">
             <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
+          </Grid>
+          <Grid item xs={12} md="auto">
+            <TogglePictureInput checked={true} handleInput={this.handleFilterInput} />
+          </Grid>
+          <Grid item xs={12} md="auto">
+            <ToggleDescriptionInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">

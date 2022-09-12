@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { format } from 'date-fns'
-import { Typography, Grid, Card, Link } from '@mui/material';
+import { Typography, Grid, Card, Chip, Link } from '@mui/material';
 import './ResultItem.css';
 
 export default class ResultItem extends React.Component {
   render() {
     const item = this.props.item;
 
-    // Title and description
+    // Title and description.
     let title = item.title;
     let description;
     if (item.scenario) {
@@ -16,17 +16,20 @@ export default class ResultItem extends React.Component {
     if (item.link) {
       title = <Link href={item.link} target="_blank">{title}</Link>
     }
-    if (item.description) {
+    if (item.description && item.filters.show_description) {
       description = <p><em>{item.description}</em></p>
     }
 
     // Information.
-    let information = item.display_date;
-    if (item.event) {
-      information += ' | ' + item.event;
-    }
-    if (item.canon) {
-      information += ' | Canon: ' + item.canon;
+    let information;
+    if (item.filters.show_lore) {
+      information = item.display_date;
+      if (item.event) {
+        information += ' | ' + item.event;
+      }
+      if (item.canon) {
+        information += ' | Canon: ' + item.canon;
+      }
     }
 
     // Availability.
@@ -39,12 +42,12 @@ export default class ResultItem extends React.Component {
     let releaseDate;
     if (item.filters.show_release_date) {
       let date = format(new Date(item.release_date), 'MMM d, yyyy');
-      releaseDate = <Typography variant="subtitle1" component="small">({date})</Typography>
+      releaseDate = <Chip sx={{ ml: 1 }} label={date} />
     }
 
     // Image
     let image;
-    if (item.image) {
+    if (item.image && item.filters.show_picture) {
       image = <span className="entry-image"><img src={item.image} width="200" alt="" /></span>
     }
 

@@ -23,11 +23,20 @@ export default class ResultContainer extends React.Component {
     if (!filters.hasOwnProperty('sort_results')) {
       filters.sort_results = 'In-universe date';
     }
+    if (!filters.hasOwnProperty('show_lore')) {
+      filters.show_lore = true;
+    }
     if (!filters.hasOwnProperty('show_availability')) {
       filters.show_availability = true;
     }
     if (!filters.hasOwnProperty('show_release_date')) {
       filters.show_release_date = true;
+    }
+    if (!filters.hasOwnProperty('show_picture')) {
+      filters.show_picture = true;
+    }
+    if (!filters.hasOwnProperty('show_description')) {
+      filters.show_description = true;
     }
 
     // Attach the filter data.
@@ -57,6 +66,9 @@ export default class ResultContainer extends React.Component {
     // Sort.
     switch (filters.sort_results) {
       case 'In-universe date':
+        results = results.filter(item => {
+          return item.reference_date !== '';
+        });
         results = results.sort(function (a, b) {
           return new Date(a.reference_date) - new Date(b.reference_date);
         });

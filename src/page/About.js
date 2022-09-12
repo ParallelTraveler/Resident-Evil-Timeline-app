@@ -31,16 +31,19 @@ function About() {
             <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">Credits</Typography>
             <p>Our team consists of dedicated fandom benefactors who have devoted countless hours to creating online resources for accessing and understanding the Resident Evil franchise. We hail from different spheres of the fandom and have essentially joined forces for this venture. We hope the greater fandom appreciates this tool!</p>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
-              <p><strong>Project director</strong> - ParallelTraveler; Resident Evil wiki admin</p>
+              <Typography sx={{ mt: 2 }} variant="h6" component="h3">ParallelTraveler (Project director)</Typography>
+              <p>About: Resident Evil wiki admin</p>
               <p>Twitter: <Link href="https://twitter.com/bioranger_PT" target="_blank">@bioranger_PT</Link></p>
             </Card>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
-              <p><strong>Main developer</strong> - EvilResource; owner of evilresource.com</p>
+              <Typography sx={{ mt: 2 }} variant="h6" component="h3">EvilResource (Main developer)</Typography>
+              <p>About: Owner of evilresource.com</p>
               <p>Twitter: <Link href="https://twitter.com/EvilResource" target="_blank">@EvilResource</Link></p>
-              <p>Website: <Link href="https://www.evilresource.com/" target="_blank">evilresource.com</Link></p>
+              <p>Website: <Link href="https://www.evilresource.com/" target="_blank">www.evilresource.com</Link></p>
             </Card>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
-              <p><strong>Assistance</strong> - MassDistraction</p>
+              <Typography sx={{ mt: 2 }} variant="h6" component="h3">MassDistraction (Assistance)</Typography>
+              <p>About: Resident Evil Reddit (r/residentevil) contributor, has made other timeline documents on Reddit</p>
               <p>Twitter: <Link href="https://twitter.com/massaharhautus" target="_blank">@massaharhautus</Link></p>
             </Card>
           </Grid>
