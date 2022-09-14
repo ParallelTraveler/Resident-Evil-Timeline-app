@@ -27,8 +27,11 @@ export default class ResultItem extends React.Component {
       if (item.event) {
         information += ' | ' + item.event;
       }
-      if (item.canon) {
-        information += ' | Canon: ' + item.canon;
+      if (item.sub_source) {
+        information += ' | Media source: ' + item.sub_source;
+      }
+      if (item.sub_canon) {
+        information += ' | Canon: ' + item.sub_canon;
       }
     }
 

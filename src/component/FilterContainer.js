@@ -26,18 +26,32 @@ export default class FilterContainer extends React.Component {
     // Create the filter options.
     this.sourceOptions = [
       'Major video game',
-      'Minor video game',
-      'Drama album',
-      'Movie',
-      'TV series',
-      'In-universe documentary',
-      'Web hosted',
-      'Literature',
-      'Manga',
-      'Stage production',
+      'Minor video games & demos',
+      'Movies & TV series',
+      'Production',
+      'Novel',
+      'Comic',
+      'Supplement literature',
+      'Other games',
+      'Other',
     ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
     this.entryTypeOptions = ['Simple', 'Sectioned'];
-    this.canonOptions = this.props.data.map(item => item.canon).filter(this.onlyUnique);
+    this.canonOptions = [
+      'American comics',
+      'Anderson',
+      'Anderson branch',
+      'Chinese',
+      'Flagship',
+      'Main',
+      'Makino',
+      'Makoto',
+      'Matsuyama',
+      'No plot',
+      'No plot/Non-canon retelling',
+      'ORC',
+      'Perry',
+      'Pocket',
+    ]; // this.props.data.map(item => item.canon).filter(this.onlyUnique);
     this.sortResultsOptions = ['In-universe date', 'Release date'];
   }
 
