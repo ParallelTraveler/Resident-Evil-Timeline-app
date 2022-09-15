@@ -7,12 +7,6 @@ import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import Checkbox from '@mui/material/Checkbox';
-import { withStyles } from "@mui/material";
-
-const styles = (theme) => ({
-  root: {
-  }
-}); 
 
 export default class FilterSourceInput extends React.Component {
   isAllSelected = false;
@@ -43,6 +37,7 @@ export default class FilterSourceInput extends React.Component {
     this.isAllSelected = options.length > 0 && selected.length === options.length;
     items.push(
       <MenuItem
+        key="all"
         value="all"
       >
         <ListItemIcon>

@@ -37,20 +37,16 @@ export default class FilterContainer extends React.Component {
     ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
     this.entryTypeOptions = ['Simple', 'Sectioned'];
     this.canonOptions = [
-      'American comics',
+      'Main',
+      'Main branch',
+      'ORC',
       'Anderson',
       'Anderson branch',
-      'Chinese',
-      'Flagship',
-      'Main',
-      'Makino',
-      'Makoto',
-      'Matsuyama',
-      'No plot',
-      'No plot/Non-canon retelling',
-      'ORC',
       'Perry',
+      'American comics',
+      'Chinese comics',
       'Pocket',
+      'No plot/Non-canon retelling',
     ]; // this.props.data.map(item => item.canon).filter(this.onlyUnique);
     this.sortResultsOptions = ['In-universe date', 'Release date'];
   }
