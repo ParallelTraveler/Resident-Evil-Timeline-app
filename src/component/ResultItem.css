@@ -4,8 +4,14 @@
 
 .entry-image img {
   display: block;
-  width: 100%;
+  width: 70%;
   height: auto;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  .entry-image img {
+    width: 100%;
+  }
 }
 
 .entry-icon {
@@ -17,5 +23,9 @@
   padding: 5px;
   box-sizing: content-box;
   border-radius: 50%;
+  vertical-align: bottom;
+}
+
+.entry-title {
   vertical-align: bottom;
 }

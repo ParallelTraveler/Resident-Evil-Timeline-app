@@ -19,12 +19,11 @@ export default class FilterSourceInput extends React.Component {
   }
 
   handleChange(event) {
-    const value = event.target.value;
+    let value = event.target.value;
     const selected = this.state.value;
     const options = this.props.options;
     if (value[value.length - 1] === 'all') {
-      this.setState({ value: selected.length === options.length ? [] : options});
-      return;
+      value = (selected.length === options.length ? [] : options);
     }
     this.setState({ value: value });
     this.props.handleInput('filter_source', value);

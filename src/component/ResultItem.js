@@ -38,14 +38,22 @@ export default class ResultItem extends React.Component {
     // Availability.
     let availability;
     if (item.filters.show_availability) {
-      availability = <p>{item.availability}</p>
+      if (item.availability_link) {
+        availability = <p><Link href={item.availability_link} target="_blank">{item.availability}</Link></p>
+      } else {
+        availability = <p>{item.availability}</p>
+      }
     }
 
     // Release date.
     let releaseDate;
+    let releaseRegion;
     if (item.filters.show_release_date) {
       let date = format(new Date(item.release_date), 'MMM d, yyyy');
-      releaseDate = <Chip sx={{ ml: 1 }} label={date} />
+      releaseDate = <Chip sx={{ mr: 1 }} label={date} />
+      if (item.release_region) {
+        releaseRegion = <Chip sx={{ mr: 1 }} variant="outlined" label={item.release_region} />
+      }
     }
 
     // Image
@@ -59,8 +67,12 @@ export default class ResultItem extends React.Component {
         <Card sx={{ my: 2, px: 2 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={10}>
-              <Typography sx={{ mt: 2 }} variant="h5" component="h2">
-                {title} {releaseDate}
+              <Typography sx={{ mt: 2 }} component="h2">
+                <Typography sx={{ mr: 2 }} variant="h5" component="span" className="entry-title">
+                  {title}
+                </Typography>
+                {releaseDate}
+                {releaseRegion}
               </Typography>
               {description}
               <p>{information}</p>
