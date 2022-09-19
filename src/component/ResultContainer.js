@@ -21,7 +21,7 @@ export default class ResultContainer extends React.Component {
       filters.filter_entry_type = 'Simple';
     }
     if (!filters.hasOwnProperty('sort_results')) {
-      filters.sort_results = 'In-universe date';
+      filters.sort_results = 'Release date';
     }
     if (!filters.hasOwnProperty('show_lore')) {
       filters.show_lore = true;

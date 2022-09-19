@@ -48,7 +48,7 @@ export default class FilterContainer extends React.Component {
       'Pocket',
       'No plot/Non-canon retelling',
     ]; // this.props.data.map(item => item.canon).filter(this.onlyUnique);
-    this.sortResultsOptions = ['In-universe date', 'Release date'];
+    this.sortResultsOptions = ['Release date', 'In-universe date'];
   }
 
   handleFilterInput(filter, value) {
@@ -71,13 +71,13 @@ export default class FilterContainer extends React.Component {
             <FilterSourceInput options={this.sourceOptions} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <FilterEntryTypeInput options={this.entryTypeOptions} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md={6}>
             <FilterCanonInput options={this.canonOptions} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
             <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <FilterEntryTypeInput options={this.entryTypeOptions} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">

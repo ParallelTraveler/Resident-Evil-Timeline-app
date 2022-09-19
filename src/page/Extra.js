@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Link, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import Navbar from "../Navbar";
 
 function Extra() {
