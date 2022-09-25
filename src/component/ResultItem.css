@@ -28,5 +28,28 @@
 }
 
 .entry-title {
-  vertical-align: bottom;
+  vertical-align: middle;
+}
+.entry-desc {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.entry-info-list {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+.entry-info-list li {
+  display: inline-block;
+}
+.entry-info-list li:after {
+  content: '|';
+  display: inline-block;
+  padding: 0 7px;
+  color: #666;
+}
+.entry-info-list li:last-child:after {
+  content: '';
+  padding: 0;
 }

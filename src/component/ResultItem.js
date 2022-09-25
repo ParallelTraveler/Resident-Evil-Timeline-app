@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { format } from 'date-fns'
 import { Typography, Grid, Card, Chip, Link } from '@mui/material';
 import './ResultItem.css';
 
@@ -17,31 +16,31 @@ export default class ResultItem extends React.Component {
       title = <Link href={item.link} target="_blank">{title}</Link>
     }
     if (item.description && item.filters.show_description) {
-      description = <p><em>{item.description}</em></p>
+      description = <div className="entry-desc">{item.description}</div>
     }
 
-    // Information.
-    let information;
+    // Lore.
+    let info1 = [];
     if (item.filters.show_lore) {
-      information = item.display_date;
+      info1.push(<li key="reference_date">{item.reference_display_date}</li>);
       if (item.event) {
-        information += ' | ' + item.event;
-      }
-      if (item.sub_source) {
-        information += ' | Media source: ' + item.sub_source;
+        info1.push(<li key="event">{item.event}</li>);
       }
       if (item.sub_canon) {
-        information += ' | Canon: ' + item.sub_canon;
+        info1.push(<li key="canon">Canon: {item.sub_canon}</li>);
       }
     }
 
-    // Availability.
-    let availability;
+    // Media and availability.
+    let info2 = [];
     if (item.filters.show_availability) {
+      if (item.sub_source) {
+        info2.push(<li key="media">Media source: {item.sub_source}</li>);
+      }
       if (item.availability_link) {
-        availability = <p><Link href={item.availability_link} target="_blank">{item.availability}</Link></p>
+        info2.push(<li key="availability">Accessibility: <Link href={item.availability_link} target="_blank">{item.availability}</Link></li>);
       } else {
-        availability = <p>{item.availability}</p>
+        info2.push(<li key="availability">Accessibility: {item.availability}</li>);
       }
     }
 
@@ -49,10 +48,9 @@ export default class ResultItem extends React.Component {
     let releaseDate;
     let releaseRegion;
     if (item.filters.show_release_date) {
-      let date = format(new Date(item.release_date), 'MMM d, yyyy');
-      releaseDate = <Chip sx={{ mr: 1 }} label={date} />
+      releaseDate = <Chip sx={{ mr: 1 }} size="small" label={item.release_display_date} />
       if (item.release_region) {
-        releaseRegion = <Chip sx={{ mr: 1 }} variant="outlined" label={item.release_region} />
+        releaseRegion = <Chip sx={{ mr: 1 }} size="small" variant="outlined" label={item.release_region} />
       }
     }
 
@@ -64,10 +62,10 @@ export default class ResultItem extends React.Component {
 
     return (
       <>
-        <Card sx={{ my: 2, px: 2 }}>
+        <Card sx={{ my: 2, p: 2 }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={10}>
-              <Typography sx={{ mt: 2 }} component="h2">
+              <Typography sx={{ mt: 0 }} component="h2">
                 <Typography sx={{ mr: 2 }} variant="h5" component="span" className="entry-title">
                   {title}
                 </Typography>
@@ -75,8 +73,8 @@ export default class ResultItem extends React.Component {
                 {releaseRegion}
               </Typography>
               {description}
-              <p>{information}</p>
-              {availability}
+              {this.renderList(info1)}
+              {this.renderList(info2)}
             </Grid>
             <Grid item xs={12} md={2} sx={{ my: 2 }}>
               {image}
@@ -85,5 +83,12 @@ export default class ResultItem extends React.Component {
         </Card>
       </>
     );
+  }
+
+  renderList(list) {
+    if (list.length === 0) {
+      return [];
+    }
+    return <ul className='entry-info-list'>{list}</ul>;
   }
 }
