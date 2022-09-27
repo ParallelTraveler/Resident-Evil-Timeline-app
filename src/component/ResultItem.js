@@ -22,7 +22,9 @@ export default class ResultItem extends React.Component {
     // Lore.
     let info1 = [];
     if (item.filters.show_lore) {
-      info1.push(<li key="reference_date">{item.reference_display_date}</li>);
+      if (item.reference_display_date) {
+        info1.push(<li key="reference_date">{item.reference_display_date}</li>);
+      }
       if (item.event) {
         info1.push(<li key="event">{item.event}</li>);
       }
@@ -48,7 +50,9 @@ export default class ResultItem extends React.Component {
     let releaseDate;
     let releaseRegion;
     if (item.filters.show_release_date) {
-      releaseDate = <Chip sx={{ mr: 1 }} size="small" label={item.release_display_date} />
+      if (item.release_display_date) {
+        releaseDate = <Chip sx={{ mr: 1 }} size="small" label={item.release_display_date} />
+      }
       if (item.release_region) {
         releaseRegion = <Chip sx={{ mr: 1 }} size="small" variant="outlined" label={item.release_region} />
       }
@@ -79,6 +83,7 @@ export default class ResultItem extends React.Component {
             <Grid item xs={12} md={2} sx={{ my: 2 }}>
               {image}
             </Grid>
+            {this.renderSecondaryData(item)}
           </Grid>
         </Card>
       </>
@@ -90,5 +95,62 @@ export default class ResultItem extends React.Component {
       return [];
     }
     return <ul className='entry-info-list'>{list}</ul>;
+  }
+
+  renderSecondaryData(parent) {
+    if (!('secondary' in parent)) {
+      return <></>;
+    }
+    const item = parent.secondary;
+
+    // Title and description.
+    let title = item.title;
+    let description;
+    if (item.link) {
+      title = <Link href={item.link} target="_blank">{title}</Link>
+    }
+    if (item.description && parent.filters.show_description) {
+      description = <div className="entry-desc">{item.description}</div>
+    }
+
+    // Media and availability.
+    let info2 = [];
+    if (parent.filters.show_availability) {
+      if (item.source) {
+        info2.push(<li key="media">Media source: {item.source}</li>);
+      }
+      if (item.availability_link) {
+        info2.push(<li key="availability">Accessibility: <Link href={item.availability_link} target="_blank">{item.availability}</Link></li>);
+      } else {
+        info2.push(<li key="availability">Accessibility: {item.availability}</li>);
+      }
+    }
+
+    // Release date.
+    let releaseDate;
+    let releaseRegion;
+    if (parent.filters.show_release_date) {
+      if (item.release_display_date) {
+        releaseDate = <Chip sx={{ mr: 1 }} size="small" label={item.release_display_date} />
+      }
+      if (item.release_region) {
+        releaseRegion = <Chip sx={{ mr: 1 }} size="small" variant="outlined" label={item.release_region} />
+      }
+    }
+
+    return (
+      <Grid item xs={12} md={12}>
+        <hr />
+        <Typography sx={{ mt: 0 }} component="h2">
+          <Typography sx={{ mr: 2 }} variant="h5" component="span" className="entry-title">
+            {title}
+          </Typography>
+          {releaseDate}
+          {releaseRegion}
+        </Typography>
+        {description}
+        {this.renderList(info2)}
+      </Grid>
+    );
   }
 }

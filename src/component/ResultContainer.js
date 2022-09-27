@@ -75,6 +75,9 @@ export default class ResultContainer extends React.Component {
         break;
 
       default:
+        results = results.filter(item => {
+          return item.release_date !== '';
+        });
         results = results.sort(function (a, b) {
           return new Date(a.release_date) - new Date(b.release_date);
         });
