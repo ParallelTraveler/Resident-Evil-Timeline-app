@@ -26,7 +26,7 @@ function Extra() {
 
             <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">See also</Typography>
             <ul>
-              <li><Link href="https://bioredqueeneffect.blogspot.com/" target="_blank">bioredqueeneffect.blogspot.com/</Link> - ParallelTraveler's personal blog</li>
+              <li><Link href="#" target="_blank">[placeholder]</Link> - ParallelTraveler's personal blog</li>
               <li><Link href="https://www.evilresource.com/" target="_blank">www.evilresource.com</Link> - Evil Resource's website</li>
               <li><Link href="https://residentevil.fandom.com/wiki/Timeline_by_media" target="_blank">residentevil.fandom.com/wiki/Timeline_by_media</Link> - static timeline on Resident Evil Wiki</li>
             </ul>

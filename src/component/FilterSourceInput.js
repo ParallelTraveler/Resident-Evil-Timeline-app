@@ -13,7 +13,8 @@ export default class FilterSourceInput extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { value: this.props.options };
+    let options = this.props.defaultOptions ? this.props.defaultOptions : this.props.options;
+    this.state = { value: options };
     this.handleChange = this.handleChange.bind(this);
     this.isAllSelected = this.props.options.length > 0 && this.state.value.length === this.props.options.length;
   }

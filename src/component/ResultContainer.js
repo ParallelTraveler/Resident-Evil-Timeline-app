@@ -9,6 +9,7 @@ export default class ResultContainer extends React.Component {
 
   getResults() {
     let filters = this.props.filters;
+    let defaultFilters = this.props.defaultFilters;
     let results = this.props.data;
 
     // Quit if we are not instructed to show results.
@@ -17,6 +18,12 @@ export default class ResultContainer extends React.Component {
     }
 
     // Set defaults.
+    if (!filters.hasOwnProperty('filter_source') && defaultFilters.filter_source) {
+      filters.filter_source = defaultFilters.filter_source;
+    }
+    if (!filters.hasOwnProperty('filter_canon') && defaultFilters.filter_canon) {
+      filters.filter_canon = defaultFilters.filter_canon;
+    }
     if (!filters.hasOwnProperty('filter_entry_type')) {
       filters.filter_entry_type = 'Simple';
     }

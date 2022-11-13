@@ -18,9 +18,11 @@ export default class FilterContainer extends React.Component {
   sourceOptions = [];
   canonOptions = [];
   sortResultsOptions = [];
+  defaultFilters = {};
 
   constructor(props) {
     super(props);
+    this.defaultFilters = this.props.defaultFilters;
     this.handleFilterInput = this.handleFilterInput.bind(this);
 
     // Create the filter options.
@@ -68,10 +70,10 @@ export default class FilterContainer extends React.Component {
       <Card sx={{ p: 2 }} variant="outlined">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <FilterSourceInput options={this.sourceOptions} handleInput={this.handleFilterInput} />
+            <FilterSourceInput options={this.sourceOptions} defaultOptions={this.defaultFilters.filter_source} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <FilterCanonInput options={this.canonOptions} handleInput={this.handleFilterInput} />
+            <FilterCanonInput options={this.canonOptions} defaultOptions={this.defaultFilters.filter_canon} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
             <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />

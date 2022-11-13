@@ -8,6 +8,10 @@ import timelineData from './../data/db.json';
 
 export default class Home extends React.Component {
   resultsTrigger = false;
+  defaultFilters = {
+    'filter_source': ['Major video game'],
+    'filter_canon': ['Main'],
+  };
 
   constructor(props) {
     super(props);
@@ -30,8 +34,8 @@ export default class Home extends React.Component {
             <img src="/Resident-Evil-Timeline-app/images/title.png" alt="Resident Evil Timeline" className="banner" />
           </p>
           <main>
-            <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />
-            <ResultContainer data={timelineData} show={this.resultsTrigger} filters={this.state.filters} />
+            <FilterContainer data={timelineData} defaultFilters={this.defaultFilters} handleFilterSelection={this.handleFilterSelection} />
+            <ResultContainer data={timelineData} defaultFilters={this.defaultFilters} show={this.resultsTrigger} filters={this.state.filters} />
           </main>
         </Container>
       </>
