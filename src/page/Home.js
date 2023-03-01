@@ -7,18 +7,13 @@ import './Home.css';
 
 export default class Home extends React.Component {
   render() {
-    let home;
-    if (1 == 1) {
-      home = <HomeDMC />
-    } else {
-      home = <HomeRE />
-    }
-
+    const isDMC = window.location.search.indexOf('dmc=true') > 0;
     return (
       <>
         <Navbar />
         <Container maxWidth="lg">
-          {home}
+          {isDMC && <HomeDMC />}
+          {!isDMC && <HomeRE />}
         </Container>
       </>
     );

@@ -85,6 +85,15 @@ export default class ResultContainer extends React.Component {
         });
         break;
 
+      case 'Timeline placement':
+        results = results.filter(item => {
+          return item.timeline_index && item.timeline_index !== null;
+        });
+        results = results.sort(function (a, b) {
+          return parseInt(a.timeline_index, 10) > parseInt(b.timeline_index, 10);
+        });
+        break;
+
       default:
         results = results.filter(item => {
           return item.release_date && item.release_date !== '';

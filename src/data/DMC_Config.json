@@ -1,0 +1,46 @@
+{
+  "filter_source": {
+    "enabled": true,
+    "options": [
+      "Video game",
+      "Mobile game",
+      "Other games",
+      "Audio production",
+      "Literature",
+      "Visual production"
+    ],
+    "default": [
+      "Video game"
+    ]
+  },
+  "filter_entry_type": {
+    "enabled": false,
+    "options": [],
+    "default": []
+  },
+  "filter_canon": {
+    "enabled": true,
+    "options": [
+      "Re-telling",
+      "Main",
+      "Ninja Theory reboot",
+      "Non-canon"
+    ],
+    "default": [
+      "Main"
+    ]
+  },
+  "sort_results": {
+    "enabled": true,
+    "options": [
+      "Release date",
+      "Timeline placement"
+    ],
+    "default": [
+      "Release date"
+    ]
+  },
+  "show_lore": {
+    "enabled": false
+  }
+}
