@@ -8,7 +8,7 @@ import './Home.css';
 export default class Home extends React.Component {
   render() {
     let home;
-    if (1 != 1) {
+    if (1 == 1) {
       home = <HomeDMC />
     } else {
       home = <HomeRE />

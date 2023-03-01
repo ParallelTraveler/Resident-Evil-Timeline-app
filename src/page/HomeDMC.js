@@ -1,15 +1,11 @@
 import * as React from 'react';
 import FilterContainer from '../component/FilterContainer';
 import ResultContainer from '../component/ResultContainer';
-import './Home.css';
-import timelineData from './../data/db.json';
+import data from './../data/DMC_Data.json';
+import config from './../data/DMC_Config.json';
 
 export default class HomeDMC extends React.Component {
   resultsTrigger = false;
-  defaultFilters = {
-    'filter_source': ['Major video game'],
-    'filter_canon': ['Main'],
-  };
 
   constructor(props) {
     super(props);
@@ -27,11 +23,11 @@ export default class HomeDMC extends React.Component {
     return (
       <>
         <p>
-          Devil May Cry
+          DMC
         </p>
         <main>
-          <FilterContainer data={timelineData} defaultFilters={this.defaultFilters} handleFilterSelection={this.handleFilterSelection} />
-          <ResultContainer data={timelineData} defaultFilters={this.defaultFilters} show={this.resultsTrigger} filters={this.state.filters} />
+          <FilterContainer data={data} config={config} handleFilterSelection={this.handleFilterSelection} />
+          <ResultContainer data={data} config={config} show={this.resultsTrigger} filters={this.state.filters} />
         </main>
       </>
     );

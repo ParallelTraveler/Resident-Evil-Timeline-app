@@ -2,8 +2,8 @@ import * as React from 'react';
 import FilterContainer from '../component/FilterContainer';
 import ResultContainer from '../component/ResultContainer';
 import './Home.css';
-import data from './../data/DataRE.json';
-import filters from './../data/FiltersRE.json';
+import data from './../data/RE_Data.json';
+import config from './../data/RE_Config.json';
 
 export default class HomeRE extends React.Component {
   resultsTrigger = false;
@@ -27,8 +27,8 @@ export default class HomeRE extends React.Component {
           <img src="/Resident-Evil-Timeline-app/images/title.png" alt="Resident Evil Timeline" className="banner" />
         </p>
         <main>
-          <FilterContainer data={data} filterData={filters} handleFilterSelection={this.handleFilterSelection} />
-          <ResultContainer data={data} filterData={filters} show={this.resultsTrigger} filters={this.state.filters} />
+          <FilterContainer data={data} config={config} handleFilterSelection={this.handleFilterSelection} />
+          <ResultContainer data={data} config={config} show={this.resultsTrigger} filters={this.state.filters} />
         </main>
       </>
     );
