@@ -8,8 +8,8 @@ export default class ResultContainer extends React.Component {
   }
 
   getResults() {
+    let filterData = this.props.filterData;
     let filters = this.props.filters;
-    let defaultFilters = this.props.defaultFilters;
     let results = this.props.data;
 
     // Quit if we are not instructed to show results.
@@ -18,17 +18,17 @@ export default class ResultContainer extends React.Component {
     }
 
     // Set defaults.
-    if (!filters.hasOwnProperty('filter_source') && defaultFilters.filter_source) {
-      filters.filter_source = defaultFilters.filter_source;
+    if (!filters.hasOwnProperty('filter_source') && filterData.source.default) {
+      filters.filter_source = filterData.source.default;
     }
-    if (!filters.hasOwnProperty('filter_canon') && defaultFilters.filter_canon) {
-      filters.filter_canon = defaultFilters.filter_canon;
+    if (!filters.hasOwnProperty('filter_canon') && filterData.canon.default) {
+      filters.filter_canon = filterData.canon.default;
     }
-    if (!filters.hasOwnProperty('filter_entry_type')) {
-      filters.filter_entry_type = 'Simple';
+    if (!filters.hasOwnProperty('filter_entry_type') && filterData.entry_type.default) {
+      filters.filter_entry_type = filterData.entry_type.default[0];
     }
-    if (!filters.hasOwnProperty('sort_results')) {
-      filters.sort_results = 'Release date';
+    if (!filters.hasOwnProperty('sort_results') && filterData.sort_results.default) {
+      filters.sort_results = filterData.sort_results.default[0];
     }
     if (!filters.hasOwnProperty('show_lore')) {
       filters.show_lore = true;

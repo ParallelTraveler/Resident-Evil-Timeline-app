@@ -14,43 +14,13 @@ import ToggleLoreInput from './ToggleLoreInput';
 
 export default class FilterContainer extends React.Component {
   filterValues = {};
-  entryTypeOptions = [];
-  sourceOptions = [];
-  canonOptions = [];
-  sortResultsOptions = [];
   defaultFilters = {};
+  filterData = {};
 
   constructor(props) {
     super(props);
-    this.defaultFilters = this.props.defaultFilters;
+    this.filterData = this.props.filterData;
     this.handleFilterInput = this.handleFilterInput.bind(this);
-
-    // Create the filter options.
-    this.sourceOptions = [
-      'Major video game',
-      'Minor video games & demos',
-      'Movies & TV series',
-      'Production',
-      'Novel',
-      'Comic',
-      'Supplement literature',
-      'Other games',
-      'Other',
-    ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
-    this.entryTypeOptions = ['Simple', 'Sectioned'];
-    this.canonOptions = [
-      'Main',
-      'Main branch',
-      'ORC',
-      'Anderson',
-      'Anderson branch',
-      'Perry',
-      'American comics',
-      'Chinese comics',
-      'Pocket',
-      'No plot/Non-canon retelling',
-    ]; // this.props.data.map(item => item.canon).filter(this.onlyUnique);
-    this.sortResultsOptions = ['Release date', 'In-universe date'];
   }
 
   handleFilterInput(filter, value) {
@@ -70,16 +40,16 @@ export default class FilterContainer extends React.Component {
       <Card sx={{ p: 2 }} variant="outlined">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <FilterSourceInput options={this.sourceOptions} defaultOptions={this.defaultFilters.filter_source} handleInput={this.handleFilterInput} />
+            <FilterSourceInput options={this.filterData.source.options} defaultOptions={this.filterData.source.default} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <FilterCanonInput options={this.canonOptions} defaultOptions={this.defaultFilters.filter_canon} handleInput={this.handleFilterInput} />
+            <FilterCanonInput options={this.filterData.canon.options} defaultOptions={this.filterData.canon.default} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />
+            <SortResultsInput options={this.filterData.sort_results.options} handleInput={this.handleFilterInput} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <FilterEntryTypeInput options={this.entryTypeOptions} handleInput={this.handleFilterInput} />
+            <FilterEntryTypeInput options={this.filterData.entry_type.options} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
