@@ -8,8 +8,8 @@ export default class ResultContainer extends React.Component {
   }
 
   getResults() {
+    let config = this.props.config;
     let filters = this.props.filters;
-    let defaultFilters = this.props.defaultFilters;
     let results = this.props.data;
 
     // Quit if we are not instructed to show results.
@@ -18,17 +18,17 @@ export default class ResultContainer extends React.Component {
     }
 
     // Set defaults.
-    if (!filters.hasOwnProperty('filter_source') && defaultFilters.filter_source) {
-      filters.filter_source = defaultFilters.filter_source;
+    if (!filters.hasOwnProperty('filter_source') && config.filter_source.default.length > 0) {
+      filters.filter_source = config.filter_source.default;
     }
-    if (!filters.hasOwnProperty('filter_canon') && defaultFilters.filter_canon) {
-      filters.filter_canon = defaultFilters.filter_canon;
+    if (!filters.hasOwnProperty('filter_canon') && config.filter_canon.default.length > 0) {
+      filters.filter_canon = config.filter_canon.default;
     }
-    if (!filters.hasOwnProperty('filter_entry_type')) {
-      filters.filter_entry_type = 'Simple';
+    if (!filters.hasOwnProperty('filter_entry_type') && config.filter_entry_type.default.length > 0) {
+      filters.filter_entry_type = config.filter_entry_type.default[0];
     }
-    if (!filters.hasOwnProperty('sort_results')) {
-      filters.sort_results = 'Release date';
+    if (!filters.hasOwnProperty('sort_results') && config.sort_results.default.length > 0) {
+      filters.sort_results = config.sort_results.default[0];
     }
     if (!filters.hasOwnProperty('show_lore')) {
       filters.show_lore = true;
@@ -60,7 +60,7 @@ export default class ResultContainer extends React.Component {
 
     // Filter entry type.
     results = results.filter(item => {
-      return item.entry_type === '' || filters.filter_entry_type.includes(item.entry_type);
+      return !item.entry_type || item.entry_type === '' || filters.filter_entry_type.includes(item.entry_type);
     });
 
     // Filter canon.
@@ -74,16 +74,25 @@ export default class ResultContainer extends React.Component {
     switch (filters.sort_results) {
       case 'In-universe date':
         results = results.filter(item => {
-          return item.reference_date !== '';
+          return item.reference_date && item.reference_date !== '';
         });
         results = results.sort(function (a, b) {
           return new Date(a.reference_date) - new Date(b.reference_date);
         });
         break;
 
+      case 'Timeline placement':
+        results = results.filter(item => {
+          return item.timeline_index && item.timeline_index !== null;
+        });
+        results = results.sort(function (a, b) {
+          return parseInt(a.timeline_index, 10) - parseInt(b.timeline_index, 10);
+        });
+        break;
+
       default:
         results = results.filter(item => {
-          return item.release_date !== '';
+          return item.release_date && item.release_date !== '';
         });
         results = results.sort(function (a, b) {
           return new Date(a.release_date) - new Date(b.release_date);

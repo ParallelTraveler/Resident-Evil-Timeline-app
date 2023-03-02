@@ -6,6 +6,7 @@ import Home from "./page/Home";
 import About from "./page/About";
 import Extra from "./page/Extra";
 import NoPage from "./page/NoPage";
+import './index.css';
 
 const darkTheme = createTheme({
   palette: {

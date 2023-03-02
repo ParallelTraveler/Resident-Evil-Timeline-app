@@ -14,43 +14,12 @@ import ToggleLoreInput from './ToggleLoreInput';
 
 export default class FilterContainer extends React.Component {
   filterValues = {};
-  entryTypeOptions = [];
-  sourceOptions = [];
-  canonOptions = [];
-  sortResultsOptions = [];
-  defaultFilters = {};
+  config = {};
 
   constructor(props) {
     super(props);
-    this.defaultFilters = this.props.defaultFilters;
+    this.config = this.props.config;
     this.handleFilterInput = this.handleFilterInput.bind(this);
-
-    // Create the filter options.
-    this.sourceOptions = [
-      'Major video game',
-      'Minor video games & demos',
-      'Movies & TV series',
-      'Production',
-      'Novel',
-      'Comic',
-      'Supplement literature',
-      'Other games',
-      'Other',
-    ]; // this.props.data.map(item => item.source).filter(this.onlyUnique);
-    this.entryTypeOptions = ['Simple', 'Sectioned'];
-    this.canonOptions = [
-      'Main',
-      'Main branch',
-      'ORC',
-      'Anderson',
-      'Anderson branch',
-      'Perry',
-      'American comics',
-      'Chinese comics',
-      'Pocket',
-      'No plot/Non-canon retelling',
-    ]; // this.props.data.map(item => item.canon).filter(this.onlyUnique);
-    this.sortResultsOptions = ['Release date', 'In-universe date'];
   }
 
   handleFilterInput(filter, value) {
@@ -69,35 +38,53 @@ export default class FilterContainer extends React.Component {
     return (
       <Card sx={{ p: 2 }} variant="outlined">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <FilterSourceInput options={this.sourceOptions} defaultOptions={this.defaultFilters.filter_source} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <FilterCanonInput options={this.canonOptions} defaultOptions={this.defaultFilters.filter_canon} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <FilterEntryTypeInput options={this.entryTypeOptions} handleInput={this.handleFilterInput} />
-          </Grid>
+          {this.config.filter_source.enabled &&
+            <Grid item xs={12} md={6}>
+              <FilterSourceInput options={this.config.filter_source.options} defaultOptions={this.config.filter_source.default} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.filter_canon.enabled &&
+            <Grid item xs={12} md={6}>
+              <FilterCanonInput options={this.config.filter_canon.options} defaultOptions={this.config.filter_canon.default} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.sort_results.enabled &&
+            <Grid item xs={12} md={6}>
+              <SortResultsInput options={this.config.sort_results.options} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.filter_entry_type.enabled &&
+            <Grid item xs={12} md={6}>
+              <FilterEntryTypeInput options={this.config.filter_entry_type.options} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
-          <Grid item xs={12} md="auto">
-            <ToggleLoreInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <TogglePictureInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <ToggleDescriptionInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
+          {this.config.show_lore.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleLoreInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_availability.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_release_date.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_picture.enabled &&
+            <Grid item xs={12} md="auto">
+              <TogglePictureInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_description.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleDescriptionInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
           <Grid item xs="auto">

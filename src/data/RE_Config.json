@@ -1,0 +1,72 @@
+{
+  "filter_source": {
+    "enabled": true,
+    "options": [
+      "Major video game",
+      "Minor video games & demos",
+      "Movies & TV series",
+      "Production",
+      "Novel",
+      "Comic",
+      "Supplement literature",
+      "Other games",
+      "Other"
+    ],
+    "default": [
+      "Major video game"
+    ]
+  },
+  "filter_entry_type": {
+    "enabled": true,
+    "options": [
+      "Simple",
+      "Sectioned"
+    ],
+    "default": [
+      "Simple"
+    ]
+  },
+  "filter_canon": {
+    "enabled": true,
+    "options": [
+      "Main",
+      "Main branch",
+      "ORC",
+      "Anderson",
+      "Anderson branch",
+      "Perry",
+      "American comics",
+      "Chinese comics",
+      "Pocket",
+      "No plot/Non-canon retelling"
+    ],
+    "default": [
+      "Main"
+    ]
+  },
+  "sort_results": {
+    "enabled": true,
+    "options": [
+      "Release date",
+      "In-universe date"
+    ],
+    "default": [
+      "Release date"
+    ]
+  },
+  "show_lore": {
+    "enabled": true
+  },
+  "show_availability": {
+    "enabled": true
+  },
+  "show_release_date": {
+    "enabled": true
+  },
+  "show_picture": {
+    "enabled": true
+  },
+  "show_description": {
+    "enabled": true
+  }
+}
