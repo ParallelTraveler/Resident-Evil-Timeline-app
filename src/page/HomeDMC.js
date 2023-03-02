@@ -23,7 +23,7 @@ export default class HomeDMC extends React.Component {
     return (
       <>
         <p>
-          DMC
+          Devil May Cry
         </p>
         <main>
           <FilterContainer data={data} config={config} handleFilterSelection={this.handleFilterSelection} />
