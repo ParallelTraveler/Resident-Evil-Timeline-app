@@ -11,7 +11,7 @@ export default class ResultContainer extends React.Component {
     let config = this.props.config;
     let filters = this.props.filters;
     let results = this.props.data;
-    console.log('Results', results);
+
     // Quit if we are not instructed to show results.
     if (!this.props.show) {
       return [];
@@ -45,12 +45,11 @@ export default class ResultContainer extends React.Component {
     if (!filters.hasOwnProperty('show_description')) {
       filters.show_description = true;
     }
-    console.log('Filters', filters);
+
     // Attach the filter data.
     for (let index in results) {
       results[index]['filters'] = filters;
     }
-    console.log('Results 1', results);
 
     // Filter source.
     if (filters.filter_source) {
@@ -58,13 +57,11 @@ export default class ResultContainer extends React.Component {
         return filters.filter_source.includes(item.source);
       });
     }
-    console.log('Results 2', results);
 
     // Filter entry type.
     results = results.filter(item => {
       return !item.entry_type || item.entry_type === '' || filters.filter_entry_type.includes(item.entry_type);
     });
-    console.log('Results 3', results);
 
     // Filter canon.
     if (filters.filter_canon) {
@@ -72,7 +69,6 @@ export default class ResultContainer extends React.Component {
         return filters.filter_canon.includes(item.canon);
       });
     }
-    console.log('Results 4', results);
 
     // Sort.
     switch (filters.sort_results) {
@@ -90,7 +86,7 @@ export default class ResultContainer extends React.Component {
           return item.timeline_index && item.timeline_index !== null;
         });
         results = results.sort(function (a, b) {
-          return parseInt(a.timeline_index, 10) > parseInt(b.timeline_index, 10);
+          return parseInt(a.timeline_index, 10) - parseInt(b.timeline_index, 10);
         });
         break;
 

@@ -38,12 +38,16 @@ export default class FilterContainer extends React.Component {
     return (
       <Card sx={{ p: 2 }} variant="outlined">
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <FilterSourceInput options={this.config.filter_source.options} defaultOptions={this.config.filter_source.default} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <FilterCanonInput options={this.config.filter_canon.options} defaultOptions={this.config.filter_canon.default} handleInput={this.handleFilterInput} />
-          </Grid>
+          {this.config.filter_source.enabled &&
+            <Grid item xs={12} md={6}>
+              <FilterSourceInput options={this.config.filter_source.options} defaultOptions={this.config.filter_source.default} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.filter_canon.enabled &&
+            <Grid item xs={12} md={6}>
+              <FilterCanonInput options={this.config.filter_canon.options} defaultOptions={this.config.filter_canon.default} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
           {this.config.sort_results.enabled &&
             <Grid item xs={12} md={6}>
               <SortResultsInput options={this.config.sort_results.options} handleInput={this.handleFilterInput} />
@@ -54,7 +58,6 @@ export default class FilterContainer extends React.Component {
               <FilterEntryTypeInput options={this.config.filter_entry_type.options} handleInput={this.handleFilterInput} />
             </Grid>
           }
-
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
           {this.config.show_lore.enabled &&
