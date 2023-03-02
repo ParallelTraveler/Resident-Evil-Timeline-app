@@ -65,18 +65,26 @@ export default class FilterContainer extends React.Component {
               <ToggleLoreInput checked={true} handleInput={this.handleFilterInput} />
             </Grid>
           }
-          <Grid item xs={12} md="auto">
-            <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <TogglePictureInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
-          <Grid item xs={12} md="auto">
-            <ToggleDescriptionInput checked={true} handleInput={this.handleFilterInput} />
-          </Grid>
+          {this.config.show_availability.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_release_date.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_picture.enabled &&
+            <Grid item xs={12} md="auto">
+              <TogglePictureInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
+          {this.config.show_description.enabled &&
+            <Grid item xs={12} md="auto">
+              <ToggleDescriptionInput checked={true} handleInput={this.handleFilterInput} />
+            </Grid>
+          }
         </Grid>
         <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
           <Grid item xs="auto">

@@ -42,5 +42,17 @@
   },
   "show_lore": {
     "enabled": false
+  },
+  "show_availability": {
+    "enabled": true
+  },
+  "show_release_date": {
+    "enabled": true
+  },
+  "show_picture": {
+    "enabled": true
+  },
+  "show_description": {
+    "enabled": true
   }
 }
