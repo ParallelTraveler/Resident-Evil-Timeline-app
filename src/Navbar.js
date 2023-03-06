@@ -23,6 +23,11 @@ function Navbar() {
               Further&nbsp;reading
             </NavLink>
           </ListItem>
+          <ListItem disablePadding>
+            <NavLink to="/extra">
+              Extra
+            </NavLink>
+          </ListItem>
         </List>
       </Container>
     </AppBar>

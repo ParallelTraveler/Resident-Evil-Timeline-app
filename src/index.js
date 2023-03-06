@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
+import FurtherReading from "./page/FurtherReading";
 import Extra from "./page/Extra";
 import NoPage from "./page/NoPage";
 import './index.css';
@@ -32,7 +33,8 @@ export default function App() {
           <Route index element={ <Navigate to="home" /> } />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/further-reading" element={<Extra />} />
+          <Route path="/further-reading" element={<FurtherReading />} />
+          <Route path="/extra" element={<Extra />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </HashRouter>
