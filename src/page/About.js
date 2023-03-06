@@ -66,7 +66,7 @@ function About() {
             </Card>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
               <Typography sx={{ mt: 2 }} variant="h6" component="h3">Special thanks</Typography>
-              <p>Resident Evil Wiki, Project Umbrella, Roronoa Wesker, Crimson Head Elder, Resident Evil Live, Blue Horror Gaming, Comfort Food Comics - For sharing information and for hosting content this app links to.</p>
+              <p>Resident Evil Wiki, Project Umbrella, Roronoa Wesker, Crimson Head Elder, Resident Evil Live, Blue Horror Gaming, Comfort Food Comics, @K_Syuuka - For sharing information and for hosting content this app links to.</p>
               <p>(names) - For help promoting the app on social media.</p>
               <p>Inconceivable - Helping with initial conceptualization, hope you are doing well.</p>
             </Card>

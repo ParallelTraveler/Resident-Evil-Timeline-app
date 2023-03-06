@@ -20,7 +20,7 @@ function Extra() {
             <p>[Placeholder text]</p>
 
             <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">Mode</Typography>
-            <p>Current mode: Survival Horror</p>
+
             <DataSwitchDialog />
           </Grid>
         </Grid>
