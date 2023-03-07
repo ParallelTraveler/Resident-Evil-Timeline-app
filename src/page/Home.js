@@ -7,7 +7,7 @@ import './Home.css';
 
 export default class Home extends React.Component {
   render() {
-    const isDMC = window.localStorage.getItem('db') === 'DMC';
+    const isDMC = window.sessionStorage.getItem('db') === 'DMC';
     return (
       <>
         <Navbar />

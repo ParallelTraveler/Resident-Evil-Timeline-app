@@ -22,7 +22,7 @@ export default class Home extends React.Component {
     if (this.modes[this.getGlobalSetting()]) {
       current = this.modes[this.getGlobalSetting()];
     } else {
-      current = Object.keys(this.modes)[0];
+      current = Object.values(this.modes)[0];
     }
     this.state = {
       current: current,
@@ -67,11 +67,11 @@ export default class Home extends React.Component {
   }
 
   setGlobalSetting(value) {
-    window.localStorage.setItem('db', value);
+    window.sessionStorage.setItem('db', value);
   }
 
   getGlobalSetting() {
-    return window.localStorage.getItem('db');
+    return window.sessionStorage.getItem('db');
   }
 
   render() {
