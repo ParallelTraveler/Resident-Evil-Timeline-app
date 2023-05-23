@@ -13,7 +13,10 @@ import Stack from '@mui/material/Stack';
 export default class Home extends React.Component {
   modes = {
     'RE': 'Survival Horror',
-    'DMC': 'Stylish Hard Action',
+    'DMC.1': 'Stylish Action',
+    'DMC.2': 'Stylish Hard Action',
+    'DMC.3': 'Stylish High Action',
+    'DMC.4': 'Stylish Crazy Action',
   };
 
   constructor(props) {

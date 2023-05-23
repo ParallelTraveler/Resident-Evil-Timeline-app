@@ -7,7 +7,8 @@ import './Home.css';
 
 export default class Home extends React.Component {
   render() {
-    const isDMC = window.sessionStorage.getItem('db') === 'DMC';
+    const db = window.sessionStorage.getItem('db');
+    const isDMC = db && db.indexOf('DMC') === 0;
     return (
       <>
         <Navbar />
