@@ -22,9 +22,6 @@ export default class HomeDMC extends React.Component {
   render() {
     return (
       <>
-        <p>
-          Devil May Cry
-        </p>
         <main>
           <FilterContainer data={data} config={config} handleFilterSelection={this.handleFilterSelection} />
           <ResultContainer data={data} config={config} show={this.resultsTrigger} filters={this.state.filters} />

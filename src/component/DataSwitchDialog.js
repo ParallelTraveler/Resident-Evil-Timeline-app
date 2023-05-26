@@ -71,6 +71,7 @@ export default class Home extends React.Component {
 
   setGlobalSetting(value) {
     window.sessionStorage.setItem('db', value);
+    window.dispatchEvent(new Event("storage"));
   }
 
   getGlobalSetting() {

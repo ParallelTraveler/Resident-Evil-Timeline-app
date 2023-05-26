@@ -1,0 +1,14 @@
+.banner-wrapper {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.2);
+}
+img.banner {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}

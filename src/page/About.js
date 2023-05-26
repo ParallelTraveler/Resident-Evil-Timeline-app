@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Grid, Card, Link, Typography } from '@mui/material';
+import Banner from '../component/Banner';
 import Navbar from "../Navbar";
 import './About.css';
 
@@ -7,10 +8,8 @@ function About() {
   return (
     <>
       <Navbar />
+      <Banner />
       <Container maxWidth="lg">
-        <p>
-          <img src="/Resident-Evil-Timeline-app/images/title.png" alt="Resident Evil Timeline" className="banner" />
-        </p>
         <Grid container spacing={2}>
           <Grid item xs={12} md={2}></Grid>
           <Grid item xs={12} md={8}>
