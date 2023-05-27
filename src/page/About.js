@@ -14,7 +14,7 @@ function About() {
           <Grid item xs={12} md={2}></Grid>
           <Grid item xs={12} md={8}>
             <Typography variant="h4" component="h1">About</Typography>
-            <p>Welcome to The Resident Evil Timeline App. Have you ever asked or seen the following;</p>
+            <p>Welcome to the Resident Evil Timeline App. Have you ever asked or seen the following;</p>
             <Card sx={{ my: 2, px: 2 }} variant="outlined">
               <blockquote>
                 <p>"Hi I'm new to Resident Evil, what is the timeline of the series?"</p>
@@ -50,7 +50,7 @@ function About() {
               <Typography sx={{ mt: 2 }} variant="h6" component="h3">ParallelTraveler (Project director)</Typography>
               <p>Resident Evil wiki admin. Has been archiving information and creating resources for over a decade. Also a bartender that makes Resident Evil themed drinks.</p>
               <p>Twitter: <Link href="https://twitter.com/bioranger_PT" target="_blank">@bioranger_PT</Link></p>
-              <p>Personal blog: <Link href="https://bioredqueeneffect.blogspot.com" target="_blank">bioredqueeneffect.blogspot.com</Link></p>
+              <p>Personal blog: <Link href="https://bioredqueeneffect.wordpress.com/" target="_blank">bioredqueeneffect.blogspot.com</Link></p>
             </Card>
             <Card sx={{ my: 2, px: 2 }}>
               <Typography sx={{ mt: 2 }} variant="h6" component="h3">EvilResource (Main developer)</Typography>
@@ -64,8 +64,8 @@ function About() {
               <p>Linktree: <Link href="https://linktr.ee/massdistraction" target="_blank">linktr.ee/massdistraction</Link></p>
             </Card>
             <Card sx={{ my: 2, px: 2 }}>
-              <Typography sx={{ mt: 2 }} variant="h6" component="h3">dnkakusei, Downvolt, 𝗚𝗹𝗶𝘁𝗰𝗵𝗲𝗱𝗦𝗾𝘂𝗶𝗿𝘁𝗹𝗲𒉭#2001, Skept1c#6272 (ARG division)</Typography>
-              <p>Members of Resident Evil Reddit Discord that elected to help execute the ARG campaign that lead to the public announcement of this app.</p>
+              <Typography sx={{ mt: 2 }} variant="h6" component="h3">dnkakusei, Downvolt, GlitchedSquirtle𒉭#2001, Skept1c#6272 (ARG division)</Typography>
+              <p>Members of Resident Evil Reddit Discord that elected to help plan and execute the ARG campaign that lead to the public announcement of this app.</p>
             </Card>
             <Card sx={{ my: 2, px: 2 }}>
               <Typography sx={{ mt: 2, mb: 2 }} variant="h6" component="h3">Cakestina (Graphic designer)</Typography>
