@@ -18,8 +18,10 @@ function Extra() {
             <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">Promotional art gallery</Typography>
             <p>[Placeholder text]</p>
 
-            <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">Mode</Typography>
+            <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">ARG campaign</Typography>
+            <p>[Placeholder text]</p>
 
+            <Typography sx={{ mt: 4 }} variant="h5alt" component="h2">Mode</Typography>
             <DataSwitchDialog />
           </Grid>
         </Grid>
